@@ -11,7 +11,6 @@
 @section('content')
 
 
-
 <header class="homepage">
     <div class="container-fluid">
         <div class="d-flex">
@@ -35,8 +34,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4"><a href="/image-gallery" class="btn btn-sm animated-button victoria-two">Store Images</a></div>
-                        <div class="col-md-4"><a href="/image-gallery" class="btn btn-sm animated-button victoria-two">Send Mail</a></div>
-                        <div class="col-md-4"><a href="/image-gallery" class="btn btn-sm animated-button victoria-two">Send SMS</a></div>
+                        <div class="col-md-4"><a href="/sendMail" class="btn btn-sm animated-button victoria-two">Send Mail</a></div>
+                        <div class="col-md-4"><a href="#" class="btn btn-sm animated-button victoria-two">Send SMS</a></div>
                     </div>
                 </div>
             </div>

@@ -11,14 +11,15 @@
 |
 */
 
+
 Route::get('/', 'HomeController@home');
 
-//Auth::routes();
+Auth::routes();
 //
 //Route::get('login/facebook', 'Auth\AuthController@redirectToFacebook');
 //Route::get('login/facebook/callback', 'Auth\AuthController@getFacebookCallback');
-//
-//Route::get('/home', 'HomeController@index');
+
+Route::get('/home', 'HomeController@index');
 
 
 Route::get('/dash', 'PostController@index');
@@ -28,3 +29,8 @@ Route::get('image-gallery', 'ImageGalleryController@index');
 Route::post('image-gallery', 'ImageGalleryController@upload');
 
 Route::delete('image-gallery/{id}', 'ImageGalleryController@destroy');
+
+Route::get('/sendMail', 'HomeController@showMail');
+
+Route::post('/sendMail', 'HomeController@postMail');
+
